@@ -15,6 +15,7 @@ on your system, run ``teardown.sh``.
 
 
 ### modify for mongodb test
+```
 // install cc
 peer chaincode install -n marbles03 -v 1.0 -p github.com/marbles03/go
 
@@ -40,3 +41,4 @@ peer chaincode query -o orderer.example.com:7050   -C mychannel  -n marbles03 -c
 
 // range query
 peer chaincode query -o orderer.example.com:7050   -C mychannel  -n marbles03 -c '{"Args":["getMarblesByRange","marble1","marble4"]}'
+```
